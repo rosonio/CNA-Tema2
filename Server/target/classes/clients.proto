@@ -1,0 +1,17 @@
+syntax = "proto3";
+import "google/protobuf/any.proto";
+
+
+option java_package = "proto";
+
+service Clients{
+  rpc sendInfo(ClientRequest) returns (ClientResponse);
+}
+
+message ClientRequest{
+  string dateOfBirth=1;
+}
+
+message ClientResponse{
+  string zodiacSign=1;
+}
