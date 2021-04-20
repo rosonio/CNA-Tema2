@@ -21,6 +21,13 @@ public class Main {
         boolean isConnected = true;
         while (isConnected) {
             Scanner input = new Scanner(System.in);
+            try
+            {
+                Thread.sleep(1000);
+            } catch (InterruptedException e)
+            {
+                e.printStackTrace();
+            }
             System.out.println("Choose: ");
             int option = input.nextInt();
 

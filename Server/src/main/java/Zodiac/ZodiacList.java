@@ -18,14 +18,14 @@ public class ZodiacList {
 
             while (line != null) {
                 line = reader.readLine();
+                while ((line = reader.readLine()) != null) {
+                    String[] sign = line.split(" ");
+
+                    ZodiacSign zodiac = new ZodiacSign(sign[0], sign[1], sign[2]);
+                    zodiacArrayList.add(zodiac);
+                }
             }
 
-            while ((line = reader.readLine()) != null) {
-                String[] sign = line.split(" ");
-
-                ZodiacSign zodiac = new ZodiacSign(sign[0], sign[1], sign[2]);
-                zodiacArrayList.add(zodiac);
-            }
             reader.close();
         } catch (IOException e) {
             e.printStackTrace();
