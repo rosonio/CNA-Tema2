@@ -56,6 +56,9 @@ public class Main {
                                     }
                                 });
                     }
+                    else{
+                        System.out.println("Invalid date. Try again");
+                    }
                 }
                 break;
 
