@@ -40,10 +40,9 @@ public class ZodiacList {
                 int day = Integer.parseInt(dateSplit[1]);
                 int year = Integer.parseInt(dateSplit[2]);
 
-                //luna februarie
                 if (month == 2 && year % 4 == 0 && year % 100 != 0 && year % 400 == 0 && day > 28) {
                     return false;
-                } else { // luni cu 30 de zile
+                } else {
                     if ((month == 4 || month == 6) || month == 9 || month == 11 && day > 30) {
                         return false;
                     }
@@ -60,7 +59,6 @@ public class ZodiacList {
             String[] dateSplit = date.split("/");
             int month = Integer.parseInt(dateSplit[0]);
             int day = Integer.parseInt(dateSplit[1]);
-            int year = Integer.parseInt(dateSplit[2]);
 
             for (ZodiacSign zodiacSign : zodiacArrayList) {
                 String[] startDate = zodiacSign.startingDate.split("/");

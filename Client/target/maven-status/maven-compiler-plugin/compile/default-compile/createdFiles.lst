@@ -8,8 +8,10 @@ proto\ClientsGrpc$ClientsBaseDescriptorSupplier.class
 proto\ClientsGrpc$ClientsImplBase.class
 proto\ClientsGrpc$ClientsStub.class
 proto\ClientsOuterClass$ClientRequestOrBuilder.class
+Main$1.class
 proto\ClientsOuterClass$ClientRequest.class
 proto\ClientsOuterClass$ClientResponse$1.class
+Main.class
 proto\ClientsOuterClass$ClientRequest$1.class
 proto\ClientsOuterClass$ClientResponseOrBuilder.class
 proto\ClientsGrpc$1.class
